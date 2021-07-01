@@ -1,6 +1,6 @@
 # My build of dmenu v5.0
 
-![](https://hostr.co/file/ftPxHjOAW14k/dmenu.png)
+![](https://i.postimg.cc/c1B4sgt6/screenshot-20210324-004.png)
 
 This repository hosts the source code of my build of dmenu (Dynamic Menu) made by [Suckless software](https://tools.suckless.org/dmenu/). It is based on dmenu v5.0 and different patches have been applied in order to provide the features I like. The list of applied patches can be found in the *patches* folder. It features:
 
@@ -9,7 +9,7 @@ This repository hosts the source code of my build of dmenu (Dynamic Menu) made b
 
 The highlight has its own individual color as illustrated in the following screenshot:
 
-![](https://hostr.co/file/oT6u6w9qvsWd/dmenu-fuzzy.png)
+![](https://i.postimg.cc/4N44nfpP/screenshot-20210324-003.png)
 
 # Dependencies
 These packages are necessary in order to run this build of dmenu properly:
