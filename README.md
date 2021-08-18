@@ -16,7 +16,7 @@ The highlight has its own individual color as illustrated in the following scree
 These packages are necessary in order to run this build of dmenu properly:
 
 * ttf-jetbrains-mono
-* ttf-joypixels
+* noto-fonts-emoji
 
 The fonts are hard-coded in the *config.def.h* file but can be changed if you don't want to use the two above.
 
