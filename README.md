@@ -24,12 +24,12 @@ The fonts are hard-coded in the *config.def.h* file but can be changed if you do
 Basically, just clone this repository (or download it), compile the build and install it. Type the following commands:
 
 ```
-git clone --depth 1 https://github.com/GSquad934/dmenu.git
+git clone --depth 1 https://github.com/astsu777/dmenu.git
 cd dmenu
 sudo make clean install
 ```
 
-This build integrates nicely with [my custom build of DWM](https://github.com/GSquad934/dwm).
+This build integrates nicely with [my custom build of DWM](https://github.com/astsu777/dwm).
 
 # Running dmenu
 The simplest way to run dmenu is to type the following command:
@@ -103,5 +103,5 @@ grep -q $match $CONFIG/apps-bg && exec $RUN
 # Contact
 You can always reach out to me:
 
-* [Twitter](https://twitter.com/gaetanict)
+* [Twitter](https://twitter.com/astsu777)
 * [Email](mailto:gaetan@ictpourtous.com)
