@@ -1,4 +1,4 @@
-# My build of dmenu v5.1
+# My build of dmenu v5.2
 
 ![](https://i.postimg.cc/c1B4sgt6/screenshot-20210324-004.png)
 
@@ -6,7 +6,6 @@ This repository hosts the source code of my build of dmenu (Dynamic Menu) made b
 
 * Adjustable line height
 * Letters matching the search are highlighted with a color
-* Support for colored unicode characters
 
 The highlight has its own individual color as illustrated in the following screenshot:
 
