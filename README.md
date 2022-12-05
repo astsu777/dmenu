@@ -2,7 +2,7 @@
 
 ![](https://i.postimg.cc/c1B4sgt6/screenshot-20210324-004.png)
 
-This repository hosts the source code of my build of dmenu (Dynamic Menu) made by [Suckless software](https://tools.suckless.org/dmenu/). It is based on dmenu v5.1 and different patches have been applied in order to provide the features I like. The list of applied patches can be found in the *patches* folder. It features:
+This repository hosts the source code of my build of dmenu (Dynamic Menu) made by [Suckless software](https://tools.suckless.org/dmenu/). It is based on dmenu v5.2 and different patches have been applied in order to provide the features I like. The list of applied patches can be found in the *patches* folder. It features:
 
 * Adjustable line height
 * Letters matching the search are highlighted with a color
