@@ -52,10 +52,10 @@ index 323f93c..f2a82b4 100644
  dmenu is displayed on the monitor number supplied. Monitor numbers are starting
  from 0.
 diff --git a/dmenu.c b/dmenu.c
-index 65f25ce..f2a4047 100644
+index e7be8af..82b204b 100644
 --- a/dmenu.c
 +++ b/dmenu.c
-@@ -131,7 +131,7 @@ drawmenu(void)
+@@ -148,7 +148,7 @@ drawmenu(void)
  {
  	unsigned int curpos;
  	struct item *item;
@@ -64,7 +64,7 @@ index 65f25ce..f2a4047 100644
  
  	drw_setscheme(drw, scheme[SchemeNorm]);
  	drw_rect(drw, 0, 0, mw, mh, 1, 1);
-@@ -148,7 +148,7 @@ drawmenu(void)
+@@ -165,7 +165,7 @@ drawmenu(void)
  	curpos = TEXTW(text) - TEXTW(&text[cursor]);
  	if ((curpos += lrpad / 2 - 1) < w) {
  		drw_setscheme(drw, scheme[SchemeNorm]);
@@ -73,7 +73,7 @@ index 65f25ce..f2a4047 100644
  	}
  
  	if (lines > 0) {
-@@ -609,6 +609,7 @@ setup(void)
+@@ -630,6 +630,7 @@ setup(void)
  
  	/* calculate menu geometry */
  	bh = drw->fonts->h + 2;
@@ -81,16 +81,16 @@ index 65f25ce..f2a4047 100644
  	lines = MAX(lines, 0);
  	mh = (lines + 1) * bh;
  #ifdef XINERAMA
-@@ -689,7 +690,7 @@ setup(void)
+@@ -710,7 +711,7 @@ setup(void)
  static void
  usage(void)
  {
--	fputs("usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"
-+	fputs("usage: dmenu [-bfiv] [-l lines] [-h height] [-p prompt] [-fn font] [-m monitor]\n"
- 	      "             [-nb color] [-nf color] [-sb color] [-sf color] [-w windowid]\n", stderr);
- 	exit(1);
+-	die("usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"
++	die("usage: dmenu [-bfiv] [-l lines] [-h height] [-p prompt] [-fn font] [-m monitor]\n"
+ 	    "             [-nb color] [-nf color] [-sb color] [-sf color] [-w windowid]");
  }
-@@ -717,6 +718,10 @@ main(int argc, char *argv[])
+ 
+@@ -737,6 +738,10 @@ main(int argc, char *argv[])
  		/* these options take one argument */
  		else if (!strcmp(argv[i], "-l"))   /* number of lines in vertical list */
  			lines = atoi(argv[++i]);
@@ -102,5 +102,5 @@ index 65f25ce..f2a4047 100644
  			mon = atoi(argv[++i]);
  		else if (!strcmp(argv[i], "-p"))   /* adds prompt to left of input field */
 -- 
-2.29.2
+2.38.1
 
